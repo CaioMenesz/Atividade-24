@@ -43,7 +43,6 @@ public class PlanoStreamingServiceTests
     [InlineData(20, true, false)]//(Maior de idade, com restrição ->false)
     [InlineData(16, false, false)]//(Menor de idade -> false)
 
-
     public void PodeAcessarConteudoAdulto(int idade, bool controleParental, bool resultadoEsperado)
     {
         var service = new PlanoStreamingService();
@@ -53,10 +52,4 @@ public class PlanoStreamingServiceTests
         Assert.True(resultadoEsperado == resultadoRetornado);
 
     }
-
-
-
-    
 }
-
-
